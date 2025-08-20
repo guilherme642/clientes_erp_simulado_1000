@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:17
+    container_name: meu_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1939
+      POSTGRES_DB: erp
+    ports:
+      - "5432:5432"

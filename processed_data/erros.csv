@@ -1,0 +1,53 @@
+Hash Cliente,Nome,Sobrenome,Contato,UF,Status do Cliente,Data Cadastro,Arquivo de Origem
+5642595656756316192,ANA SOPHIA,ARAUJO,(84)933218196,DA,VIP,2022-03-06,./raw_data/clientes_erp_simulado_1000.xlsx
+5172967659719745998,MARCELO,SOUZA,(11)995701543,MG,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+6054379522807696115,SOPHIE,SOUZA,(30)904134352,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1296465886910328207,LORENA,GONCALVES,(51)934471349,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+5009941570608210740,ALEXIA,NOVAES,(84)909097439,RS,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+8464478370749316416,MARIA EDUARDA,MELO,(71)965604945,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3577392914523853245,ANA SOPHIA,MONTEIRO,(21)914978403,RS,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3750092394581713779,MARIA VITORIA,CALDEIRA,(11)934324451,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1815269040465923349,LUCAS GABRIEL,GOMES,(41)988623924,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+4790420887796246331,BIANCA,PINTO,(31)937506068,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+7409302983203703319,MARIA ALICE,MENDES,(71)954973348,BA,VIP,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+7399441308098236781,ELOAH,ROCHA,(11)938484219,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+4263758289506779747,LAIS,CARDOSO,(80)901826199,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3241545737226805765,AMANDA,DA ROSA,(61)921356804,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1140781755416570068,VICENTE,FERREIRA,(84)925135346,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3367519996431086466,MIRELLA,MARTINS,(21)966934654,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1957901374515010387,AUGUSTO,ALMEIDA,(50)909688143,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1487901949614392315,CECILIA,DA CRUZ,(81)903029922,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+4799171537046149268,FRANCISCO,DA COSTA,(31)900825478,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+8157540292082213588,SARAH,BARBOSA,(84)968034764,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1617028284237554195,LAIS,TEIXEIRA,(71)976084958,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+5382961992042511049,EMANUEL,VIANA,(84)985424932,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+8447567169562342187,LEONARDO,DA LUZ,(41)961919657,RS,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+2910056721999218839,JOAO FELIPE,MONTEIRO,(41)978137674,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+7200203489623524195,CAIO,DA CRUZ,(71)981569857,PR,VIP,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1290649495181104382,ANTHONY,DIAS,(31)973420696,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1984130058157783893,GUSTAVO HENRIQUE,DA MOTA,(84)926204439,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3469106696433249551,JULIA,CORREIA,(71)959408215,RS,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1878435071821880723,LUANA,LIMA,(30)907567922,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+8837017752381710308,LEANDRO,DA ROCHA,(80)908554743,RS,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+4644026020944528625,FRANCISCO,DIAS,(41)943089487,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+601119370847064046,EDUARDA,MOURA,(31)928961122,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+516492522417823717,NICOLAS,MORAES,(84)929618446,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+4674241876529033756,CATARINA,ROCHA,(81)916787256,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+8957633546605236284,SOFIA,SOUZA,(50)905343961,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3055598320341831194,LUANA,OLIVEIRA,(50)905236687,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1621369264601667849,JOAO FELIPE,MOREIRA,(84)947286333,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+969167881855713965,MIGUEL,ROCHA,(61)905140546,PR,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+2913046511842024108,DAVI LUIZ,PINTO,(41)986396096,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+227644646993361578,ANA BEATRIZ,FREITAS,(21)920911791,BA,VIP,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+6373015366774798895,LUCAS GABRIEL,SALES,(21)986342346,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+6303944147244997982,MARIANA,SANTOS,(41)969081974,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+296492974169923742,RAFAEL,FERNANDES,(50)900149542,MG,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+7114257461099847900,LETICIA,ARAGAO,(31)907057836,PR,VIP,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1479470172364882158,ISIS,DAS NEVES,(81)947272742,MG,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+7317866897489791484,PEDRO MIGUEL,CARVALHO,(41)930617893,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+6019326371139891122,ISABEL,GOMES,(84)958841834,BA,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+3363369022547297240,BRENDA,MOURA,(11)972517863,SP,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+253310244011224459,JOAO MIGUEL,TEIXEIRA,(81)969116331,RJ,VIP,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+7510761893894499003,ANA LUIZA,NOGUEIRA,(80)906663093,SP,VIP,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+1427212626901222121,LORENA,CARVALHO,(31)909688327,RS,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
+4805072200668068225,MARIA SOPHIA,DA ROSA,(30)907490961,RJ,REGULAR,invalido,./raw_data/clientes_erp_simulado_1000.xlsx
