@@ -2,12 +2,14 @@ import re
 import pandas as pd
 from unidecode import unidecode
 import os
+import psycopg2
 
 class DataProcessorRefactored:
 
     def __init__(self, excel_path):
         self.excel_path = excel_path
         self.df = self.excel_to_dataframe()
+        self.uf_map = ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]
 
     def excel_to_dataframe(self) -> pd.DataFrame:
         try:
@@ -93,13 +95,16 @@ class DataProcessorRefactored:
         self.df['Data Cadastro'] = self.df['Data Cadastro'].apply(format_date)
 
     def add_origin_column(self):
-        linha_path = pd.DataFrame([[self.excel_path] + [pd.NA] * (self.df.shape[1] - 1)], columns=self.df.columns)
-        self.df = pd.concat([linha_path, self.df], ignore_index=True)
+        origin = []
+        for row in self.df.values.tolist():
+            origin.append(excel_file)
+
+        self.df.insert(5, "Arquivo de Origem", origin, True)
 
     def add_client_status(self):
         base_df = pd.read_excel(self.excel_path)
         
-        client_stat = [""]
+        client_stat = []
         for row in base_df.values.tolist():
             try:
                 if re.search("VIP", row[4]):
@@ -114,7 +119,7 @@ class DataProcessorRefactored:
         self.df.insert(4, "Status do Cliente", client_stat, True)
 
     def add_uuid_column(self):
-        hash_cliente = [""]
+        hash_cliente = []
 
         for row in self.df.values.tolist():
             if type(row[2]) != float:
@@ -123,15 +128,42 @@ class DataProcessorRefactored:
         self.df.insert(0, 'Hash Cliente', hash_cliente)
 
     def generate_rejection_logs(self):
-        rejeitadas = self.df[self.df.iloc[:, -1] == "invalido"]
+        col_status = self.df.columns[6]
+        col_uf = self.df.columns[4] 
+        
+        rejeitadas = self.df[(self.df[col_status] == "invalido") | (~self.df[col_uf].isin(self.uf_map))]
 
-        aceitos = self.df[self.df.iloc[:, -1] != "invalido"]
+        aceitos = self.df[(self.df[col_status] != "invalido") & (self.df[col_uf].isin(self.uf_map))]
         
         processed_dir = "./processed_data"
 
         os.makedirs(processed_dir, exist_ok=True)
         rejeitadas.to_csv(f"{processed_dir}/erros.csv", index=False)
         aceitos.to_csv(f"{processed_dir}/clientes_erp_formatado.csv", index=False)
+
+    def load_csv_to_postgres(self, csv_path):
+        conn = psycopg2.connect(
+            dbname="erp",
+            user="postgres",
+            password="1939",
+            host="localhost",  # ou o nome do container se rodar fora do host
+            port="5432"
+        )
+        cur = conn.cursor()
+
+        df = pd.read_csv(csv_path)
+
+        for _, row in df.iterrows():
+            cur.execute("""
+                INSERT INTO clientes (hash, nome, sobrenome, contato, uf, status, data_cadastro, origem)
+                VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
+                ON CONFLICT (hash) DO NOTHING
+            """, tuple(row))
+
+        conn.commit()
+        cur.close()
+        conn.close()
+        print("Dados inseridos no banco com sucesso!")
         
     def run_all_steps(self):
         if self.df is not None:
@@ -146,6 +178,7 @@ class DataProcessorRefactored:
             self.add_client_status()
             self.add_uuid_column()
             self.generate_rejection_logs()
+            self.load_csv_to_postgres("./processed_data/clientes_erp_formatado.csv")
             print("Processamento concluido, olhe a pasta [processed_data]")
 
 if __name__ == "__main__":
